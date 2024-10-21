@@ -8,6 +8,7 @@ public class SpringbootDockerJenkinPipelineProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootDockerJenkinPipelineProjectApplication.class, args);
+		System.out.println("HELLO");
 	}
 
 }
