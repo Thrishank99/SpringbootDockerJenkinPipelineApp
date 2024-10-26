@@ -120,7 +120,7 @@
 			</activation>
 			<properties>
 				<sonar.host.url>
-					http://localhost:9000
+					https://sonar.my-internal-company-domain.net
 				</sonar.host.url>
 			</properties>
 		</profile>
