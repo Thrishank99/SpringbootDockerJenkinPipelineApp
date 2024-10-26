@@ -24,6 +24,13 @@ pipeline {
                   bat 'docker push thrishank99/springboot-docker-jenkin-pipelineapp'
                 }
             }
+        }
+        stage('build & SonarQube Analysis'){
+            steps{
+              withSonarQubeEnv('sonarqubescanner'){
+              bat 'mvn clean package sonar:sonar'
+            }
+}
         }     
    }
 }
