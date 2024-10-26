@@ -106,9 +106,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
-  <groupId>org.sonarsource.scanner.maven</groupId>
-  <artifactId>sonar-maven-plugin</artifactId>
-  <version>3.2</version>
+    <groupId>org.sonarsource.scanner.maven</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>4.0.0.4121</version>
 </plugin>
 		</plugins>
 	</build>
@@ -121,10 +121,6 @@
 			<properties>
 				<sonar.host.url>
 					http://localhost:9000</sonar.host.url>
-					 <sonar.login>sqa_4bb93ad578f39f8b8cae9b8a449319bd80c436b5</sonar.login>
-  <sonar.language>java</sonar.language>
-  <sonar.scm.provider>git</sonar.scm.provider>
-				
 			</properties>
 		</profile>
 	</profiles>
