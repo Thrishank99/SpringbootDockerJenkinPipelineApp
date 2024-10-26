@@ -18,8 +18,8 @@ pipeline {
        stage('Push image to Hub'){
             steps{
                 script{
-                  withCredentials([usernamePassword(credentialsId: 'dockerhubnew', passwordVariable: 'srinudockerhub', usernameVariable: 'thrishank99')]) {
-                  bat "docker login -u ${env.thrishank99} -p ${env.srinudockerhub}"
+                  withCredentials([usernamePassword(credentialsId: 'dockerhubnew', passwordVariable: 'srinudockerhubnew', usernameVariable: 'thrishank99')]) {
+                  bat "docker login -u ${env.thrishank99} -p ${env.srinudockerhubnew}"
 }
                   bat 'docker push thrishank99/springboot-docker-jenkin-pipelineapp'
                 }
